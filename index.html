@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cake Art by Verónica Montalvo — Más de 35 años creando tortas personalizadas, postres artesanales y cafetería en Ambato, Cuenca, Puyo y Latacunga, Ecuador." />
+  <meta name="keywords" content="cake art, tortas personalizadas, repostería artesanal, Verónica Montalvo, tortas cumpleaños, tortas boda, postres Ecuador, Ambato, Cuenca, Puyo, Latacunga" />
+  <title>Cake Art by Verónica Montalvo | Postres & Pasteles Artesanales</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* ===== C1 — HERO BRAND LOGO ===== */
+    .hero-brand-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+    .hero-logo-script {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3.5rem;
+      color: #C9A84C;
+      line-height: 1;
+    }
+    .hero-logo-by {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.9rem;
+      color: #C9A84C;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    /* ===== C2 — COTIZACIÓN CTA ===== */
+    .cotizacion-cta { background: linear-gradient(135deg, #FFF8F2 0%, #fff 100%); }
+    .cotizacion-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+    }
+    .cotizacion-text { max-width: 640px; }
+    .cotizacion-text .gold-divider { margin: 16px auto; }
+    .cotizacion-text p {
+      font-size: 1.05rem;
+      color: #6B6B6B;
+      line-height: 1.75;
+      margin-top: 16px;
+    }
+    .btn-cotizar {
+      font-size: 1.1rem;
+      padding: 1rem 2.5rem;
+      white-space: nowrap;
+    }
+
+    /* ===== C3 — DISPONIBLE HOY ===== */
+    .disponible-hoy { background: #fff; }
+    .disponible-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    .disponible-card {
+      background: #FFF8F2;
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .disponible-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(201,168,76,0.18);
+    }
+    .disp-featured {
+      background: linear-gradient(135deg, #C9A84C 0%, #a8893d 100%);
+      color: #fff;
+    }
+    .disp-featured h3, .disp-featured p { color: #fff; }
+    .disp-badge-top {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #C9A84C;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      padding: 4px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .disp-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+    .disponible-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      color: #2d1b1b;
+    }
+    .disponible-card p { font-size: 0.9rem; color: #666; line-height: 1.6; }
+    .disp-badge {
+      display: inline-block;
+      margin-top: 1rem;
+      background: rgba(201,168,76,0.15);
+      color: #C9A84C;
+      font-size: 0.78rem;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      padding: 4px 12px;
+      border-radius: 20px;
+      letter-spacing: 0.05em;
+    }
+    .disp-featured .disp-badge { background: rgba(255,255,255,0.25); color: #fff; }
+    .disponible-cta { text-align: center; margin-top: 2rem; }
+    .disponible-cta p { margin-bottom: 1rem; color: #555; font-size: 1rem; }
+
+    /* ===== C4 — SEDE WHATSAPP BTN ===== */
+    .sede-whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #25D366;
+      color: #fff;
+      border-radius: 8px;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .sede-whatsapp-btn:hover { background: #1ebe5d; transform: translateY(-2px); }
+
+    /* ===== GALLERY FEATURED TAG ===== */
+    .gallery-featured-tag {
+      display: inline-block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #C9A84C;
+      border: 1px solid rgba(201,168,76,0.6);
+      padding: 4px 14px;
+      border-radius: 50px;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
+
+    /* ===== C7 — TESTIMONIOS (nuevo) ===== */
+    .testimonios { background: #FFF8F2; }
+    .testimonios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+    .testimonio-card {
+      background: #fff;
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+    .testimonio-card::before {
+      content: '"';
+      position: absolute;
+      top: 12px; right: 20px;
+      font-family: 'Playfair Display', serif;
+      font-size: 4.5rem;
+      color: #FDE8F2;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .testimonio-card:hover { transform: translateY(-2px); }
+    .testimonio-featured {
+      background: linear-gradient(135deg, #FFF8F2, #fff);
+      border-color: #E8247C;
+    }
+    .testimonio-featured::before { color: rgba(201,168,76,0.12); }
+    .testimonio-stars { color: #C9A84C; font-size: 1.2rem; margin-bottom: 1rem; letter-spacing: 2px; }
+    .testimonio-text {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+    .testimonio-autor { display: flex; align-items: center; gap: 0.75rem; }
+    .testimonio-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #C9A84C, #a8893d);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700; font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .testimonio-autor strong {
+      display: block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #2d1b1b;
+    }
+    .testimonio-autor span { font-size: 0.8rem; color: #999; }
+
+    /* ===== SEDE MAPS LINK ===== */
+    .sede-maps-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.82rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      color: #C9A84C;
+      text-decoration: none;
+      margin-top: 6px;
+      transition: all 0.25s ease;
+    }
+    .sede-maps-link:hover { text-decoration: underline; color: #a8893d; }
+
+    /* ===== PROCESO POLICIES NOTE ===== */
+    .proceso-policies-note {
+      background: rgba(201,168,76,0.08);
+      border-left: 3px solid #C9A84C;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .proceso-policies-note h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1A1A1A;
+      margin-bottom: 14px;
+    }
+    .proceso-policies-note ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .proceso-policies-note li { font-family: 'Poppins', sans-serif; font-size: 0.92rem; color: #6B6B6B; line-height: 1.5; }
+    .proceso-policies-note strong { color: #1A1A1A; }
+
+    /* ===== C5 — NAV-LINK HOT (Línea Diaria) ===== */
+    .nav-link-hot {
+      color: #C9A84C !important;
+      font-weight: 600 !important;
+    }
+    .nav-link-hot:hover {
+      background: rgba(201,168,76,0.1) !important;
+    }
+
+    /* ===== C6 — LÍNEA DIARIA: botones entrega ===== */
+    .linea-diaria-section { background: #fff; }
+    .linea-diaria-tag {
+      background: #E8247C;
+      color: #fff;
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-weight: 700;
+    }
+    .linea-diaria-delivery {
+      text-align: center;
+      margin: 0 0 2.5rem;
+    }
+    .delivery-intro {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1A1A1A;
+      margin-bottom: 1.25rem;
+    }
+    .delivery-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-delivery-opt {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 1rem 1.75rem;
+      border-radius: 14px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      min-width: 220px;
+    }
+    .btn-delivery-opt:hover {
+      transform: translateY(-4px);
+    }
+    .btn-pickup {
+      background: linear-gradient(135deg, #E8247C 0%, #c71e6b 100%);
+      color: #fff;
+      box-shadow: 0 6px 24px rgba(232,36,124,0.35);
+    }
+    .btn-pickup:hover { box-shadow: 0 10px 32px rgba(232,36,124,0.45); }
+    .btn-domicilio {
+      background: linear-gradient(135deg, #C9A84C 0%, #a8893d 100%);
+      color: #fff;
+      box-shadow: 0 6px 24px rgba(201,168,76,0.35);
+    }
+    .btn-domicilio:hover { box-shadow: 0 10px 32px rgba(201,168,76,0.45); }
+    .delivery-icon {
+      font-size: 1.8rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .delivery-opt-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+    .delivery-opt-text strong {
+      font-size: 1rem;
+      font-weight: 700;
+      display: block;
+    }
+    .delivery-opt-text span {
+      font-size: 0.78rem;
+      opacity: 0.88;
+    }
+
+    /* ===== C8 — COTIZACIÓN DOS OPCIONES ===== */
+    .cotizacion-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 2.5rem;
+    }
+    .cotizacion-text {
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .cotizacion-opciones {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: stretch;
+      gap: 0 1.5rem;
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .cotiz-opcion {
+      border-radius: 16px;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-height: 200px;
+      align-items: center;
+      text-align: center;
+    }
+    .cotiz-recomendada {
+      background: #fff;
+      border: 2px solid #E8247C;
+      box-shadow: 0 8px 32px rgba(232,36,124,0.12);
+      position: relative;
+      /* espacio superior para que el badge absoluto no tape contenido */
+      padding-top: 2.75rem;
+    }
+    .cotiz-formulario {
+      background: #FFF8F2;
+      border: 1.5px solid rgba(201,168,76,0.3);
+    }
+    .cotiz-badge-rec {
+      /* Fuera del flujo: flota sobre el borde superior de la tarjeta */
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      background: #E8247C;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.04em;
+    }
+    .cotiz-opcion-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+      text-align: center;
+    }
+    .cotiz-icon {
+      font-size: 1.6rem;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .cotiz-opcion-header strong {
+      display: block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1A1A1A;
+      margin-bottom: 3px;
+    }
+    .cotiz-opcion-header span {
+      font-size: 0.85rem;
+      color: #6B6B6B;
+      line-height: 1.4;
+    }
+    .cotiz-form-link {
+      font-size: 0.9rem;
+      padding: 0.65rem 1.4rem;
+      align-self: center;
+    }
+    .cotiz-separador {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.8rem;
+    }
+
+    /* ===== C9 — SEPARADORES DORADOS ENTRE SECCIONES ===== */
+    #especialidades {
+      border-top: 1px solid rgba(201,168,76,0.18);
+    }
+    #sedes {
+      border-top: 1px solid rgba(201,168,76,0.18);
+    }
+    #testimonios {
+      border-top: 1px solid rgba(201,168,76,0.18);
+    }
+
+    /* ===== RESPONSIVE NUEVAS SECCIONES ===== */
+    @media (max-width: 768px) {
+      .cotizacion-text { max-width: 100%; }
+      .hero-brand-logo { align-items: center; }
+      .hero-logo-script { font-size: 2.6rem; }
+      .delivery-btns { flex-direction: column; align-items: center; }
+      .btn-delivery-opt { min-width: 100%; justify-content: center; }
+      .cotizacion-opciones { grid-template-columns: 1fr; }
+      .cotiz-separador { padding: 0.5rem 0; }
+      .cotiz-recomendada { padding-top: 2.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-script">Cake Art</span>
+        <span class="logo-sub">by Verónica Montalvo</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#especialidades" class="nav-link">Especialidades</a>
+        <a href="#disponible-hoy" class="nav-link nav-link-hot">Línea Diaria</a>
+        <a href="#sedes" class="nav-link">Sedes</a>
+        <a href="#proceso" class="nav-link">Cómo Pedir</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <a href="https://wa.me/593998142108" target="_blank" rel="noopener" class="btn-nav-cta">Hacer Pedido</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ========== HERO ========== -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg-decoration">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+      <div class="circle circle-3"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content" data-animate="fade-up">
+        <div class="hero-badge">
+          <span class="badge-icon">✦</span>
+          <span>35 Años Compartiendo Grandes Momentos</span>
+          <span class="badge-icon">✦</span>
+        </div>
+        <!-- C1: Logo visual destacado en el hero -->
+        <div class="hero-brand-logo">
+          <span class="hero-logo-script">Cake Art</span>
+          <span class="hero-logo-by">by Verónica Montalvo</span>
+        </div>
+        <h1 class="hero-title">
+          Tu Torta Perfecta,<br />
+          <em>Hecha con Arte</em>
+        </h1>
+        <p class="hero-tagline">Postres y Pasteles &nbsp;|&nbsp; Cafetería &nbsp;|&nbsp; 4 Ciudades</p>
+        <p class="hero-desc">
+          Más de 30 sabores a tu elección. Cada detalle lo hacemos con mucho amor, para que tu celebración sea verdaderamente especial.
+        </p>
+        <div class="hero-actions">
+          <a href="#especialidades" class="btn-primary">Ver Especialidades</a>
+          <a href="#proceso" class="btn-outline">¿Cómo Pedir?</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper" data-animate="fade-left">
+        <div class="hero-img-frame">
+          <img src="img/cake-3.jpg" alt="Torta artesanal Cake Art by Verónica Montalvo" class="hero-img" />
+          <div class="img-badge-float">
+            <span class="float-num">+30</span>
+            <span class="float-txt">Sabores</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span>Descubre más</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ========== STATS BAR ========== -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat-item" data-animate="fade-up">
+        <span class="stat-number" data-target="35">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Años de Experiencia</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-animate="fade-up" data-delay="100">
+        <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Sabores a Elegir</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-animate="fade-up" data-delay="200">
+        <span class="stat-number" data-target="26000">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Seguidores en Redes</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-animate="fade-up" data-delay="300">
+        <span class="stat-number" data-target="4">0</span><span class="stat-plus"></span>
+        <span class="stat-label">Ciudades en Ecuador</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NOSOTROS ========== -->
+  <section id="nosotros" class="section nosotros">
+    <div class="container nosotros-grid">
+      <div class="nosotros-image-col" data-animate="fade-right">
+        <div class="nosotros-img-stack">
+          <div class="nosotros-img-main">
+            <img src="img/cake-2.jpg" alt="Verónica Montalvo — Cake Art" />
+          </div>
+          <div class="nosotros-img-badge">
+            <div class="badge-years">
+              <span class="badge-num">35</span>
+              <span class="badge-txt">Años de<br />Pasión</span>
+            </div>
+          </div>
+          <div class="nosotros-img-quote">
+            <span>"No solo hacemos pasteles,<br />creamos experiencias que<br />permanecen para siempre."</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="nosotros-content" data-animate="fade-left">
+        <div class="section-tag">Nuestra Historia</div>
+        <h2 class="section-title">Tres Décadas y Media de <em>Arte y Pasión</em></h2>
+        <div class="gold-divider"></div>
+        <p class="nosotros-text">
+          <strong>Cake Art</strong> no nació de la casualidad; es el fruto de más de tres décadas y media de pasión, técnica y el arte dulce de su fundadora, <strong>Verónica Montalvo</strong>. Desde sus inicios en Ambato, Verónica entendió que su vocación no era solo hornear, sino transformar el azúcar en piezas artísticas que convierten lo cotidiano en recuerdos inolvidables.
+        </p>
+        <p class="nosotros-text">
+          Lo que comenzó como un sueño local se ha expandido a <strong>Ambato, Cuenca, Puyo y Latacunga</strong>, consolidándose como un referente del diseño de autor. Con una comunidad de más de <strong>26,000 seguidores</strong>, nuestro mayor orgullo es la confianza que depositan en nosotros para sus fechas más especiales.
+        </p>
+        <ul class="nosotros-valores">
+          <li>
+            <span class="valor-icon">✦</span>
+            <div>
+              <strong>Si lo sueñas, lo esculpimos</strong>
+              <span>Personalización sin límites — tu visión, hecha arte</span>
+            </div>
+          </li>
+          <li>
+            <span class="valor-icon">✦</span>
+            <div>
+              <strong>Sabor de Autor</strong>
+              <span>Recetas propias perfeccionadas por 35+ años, como nuestro icónico Cheesecake Horneado</span>
+            </div>
+          </li>
+          <li>
+            <span class="valor-icon">✦</span>
+            <div>
+              <strong>35+ Años de Confianza</strong>
+              <span>Parte de la historia de miles de familias ecuatorianas</span>
+            </div>
+          </li>
+        </ul>
+        <a href="#contacto" class="btn-primary">Conoce Nuestras Creaciones</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LÍNEA DIARIA ========== -->
+  <section id="disponible-hoy" class="section disponible-hoy linea-diaria-section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-tag linea-diaria-tag">
+          🔥 Línea Diaria
+        </div>
+        <h2 class="section-title" style="margin-top:14px;">Disponible <em>para llevar hoy</em></h2>
+        <div class="gold-divider center"></div>
+        <p class="section-desc">Sin pedido anticipado. Ven a nuestra vitrina o recíbelo en tu puerta — ahora mismo.</p>
+      </div>
+
+      <!-- Botones de entrega inmediata -->
+      <div class="linea-diaria-delivery" data-animate="fade-up">
+        <p class="delivery-intro">¿Cómo quieres recibir tu pedido de hoy?</p>
+        <div class="delivery-btns">
+          <a href="https://wa.me/593998142108?text=Hola%20Cake%20Art!%20%F0%9F%8E%82%20Quisiera%20hacer%20un%20*pedido%20para%20Recoger%20en%20Tienda*%20%E2%80%94%20%C2%BFqu%C3%A9%20tienen%20disponible%20en%20vitrina%20ahora%3F" target="_blank" rel="noopener" class="btn-delivery-opt btn-pickup">
+            <span class="delivery-icon">🏪</span>
+            <div class="delivery-opt-text">
+              <strong>Recoger en Tienda</strong>
+              <span>Pick-up sin espera</span>
+            </div>
+          </a>
+          <a href="https://wa.me/593998142108?text=Hola%20Cake%20Art!%20%F0%9F%8E%82%20Quisiera%20hacer%20un%20*pedido%20con%20Env%C3%ADo%20a%20Domicilio*%20%E2%80%94%20%C2%BFqu%C3%A9%20tienen%20disponible%20para%20env%C3%ADo%20ahora%3F%20Mi%20direcci%C3%B3n%20es%3A" target="_blank" rel="noopener" class="btn-delivery-opt btn-domicilio">
+            <span class="delivery-icon">🛵</span>
+            <div class="delivery-opt-text">
+              <strong>Envío a Domicilio</strong>
+              <span>Lo llevamos hasta ti</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="disponible-grid">
+
+        <div class="disponible-card" data-animate="fade-up" data-delay="0">
+          <div class="disp-icon">🍰</div>
+          <h3>Porciones del Día</h3>
+          <p>Cheesecake horneado, torta de chocolate y más — disponibles en vitrina todos los días.</p>
+          <span class="disp-badge">Sin espera</span>
+        </div>
+
+        <div class="disponible-card disp-featured" data-animate="fade-up" data-delay="100">
+          <div class="disp-badge-top">⚡ Más popular</div>
+          <div class="disp-icon">🧁</div>
+          <h3>Cupcakes & Muffins</h3>
+          <p>Surtido diario de cupcakes artesanales con distintos sabores y decoraciones. Perfectos para llevar.</p>
+          <span class="disp-badge">Disponible hoy</span>
+        </div>
+
+        <div class="disponible-card" data-animate="fade-up" data-delay="200">
+          <div class="disp-icon">☕</div>
+          <h3>Cafetería & Bebidas</h3>
+          <p>Café de especialidad, bebidas frías, batidos y postres de temporada. Siéntate y disfruta.</p>
+          <span class="disp-badge">Cuenca & Puyo</span>
+        </div>
+
+        <div class="disponible-card" data-animate="fade-up" data-delay="300">
+          <div class="disp-icon">🍬</div>
+          <h3>Bocaditos & Dulces</h3>
+          <p>Bocaditos de dulce y sal listos para llevar. Ideales para reuniones de último momento.</p>
+          <span class="disp-badge">Sin espera</span>
+        </div>
+
+      </div>
+
+      <div class="disponible-cta" data-animate="fade-up">
+        <p>¿No ves lo que buscas? Pregunta qué hay disponible <strong>en este momento</strong></p>
+        <a href="https://wa.me/593998142108?text=Hola%20Cake%20Art!%20%F0%9F%8E%82%20%C2%BFQu%C3%A9%20tienen%20disponible%20hoy%20en%20vitrina%3F" target="_blank" rel="noopener" class="btn-whatsapp">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Consultar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ESPECIALIDADES ========== -->
+  <section id="especialidades" class="section especialidades">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-tag">Nuestras Creaciones</div>
+        <h2 class="section-title">Especialidades que <em>Enamoran</em></h2>
+        <div class="gold-divider center"></div>
+        <p class="section-desc">Desde tortas temáticas hasta postres delicados — todo hecho con amor y dedicación artesanal.</p>
+      </div>
+
+      <div class="especialidades-grid">
+
+        <div class="esp-card" data-animate="fade-up">
+          <div class="esp-card-img" style="background: linear-gradient(135deg, #F7A8C8 0%, #E8247C 100%);">
+            <span class="esp-icon">🎂</span>
+          </div>
+          <div class="esp-card-body">
+            <h3>Tortas de Cumpleaños</h3>
+            <p>Diseños únicos para celebrar tu día especial. Personalizamos cada detalle para que sea inolvidable.</p>
+            <span class="esp-tag">Personalizable</span>
+          </div>
+        </div>
+
+        <div class="esp-card esp-card-featured" data-animate="fade-up" data-delay="100">
+          <div class="esp-featured-label">Más Pedida</div>
+          <div class="esp-card-img" style="background: linear-gradient(135deg, #C9A84C 0%, #f0d080 50%, #C9A84C 100%);">
+            <span class="esp-icon">💍</span>
+          </div>
+          <div class="esp-card-body">
+            <h3>Tortas de Boda</h3>
+            <p>Elegancia y sofisticación para el día más importante. Creaciones que combinan belleza y sabor inigualable.</p>
+            <span class="esp-tag">Premium</span>
+          </div>
+        </div>
+
+        <div class="esp-card" data-animate="fade-up" data-delay="200">
+          <div class="esp-card-img" style="background: linear-gradient(135deg, #FDE8F2 0%, #F7A8C8 100%);">
+            <span class="esp-icon">👑</span>
+          </div>
+          <div class="esp-card-body">
+            <h3>Quinceañeras</h3>
+            <p>"Nada como ser una reina en tu cumpleaños." Tortas que hacen brillar a la protagonista del día.</p>
+            <span class="esp-tag">Diseño Exclusivo</span>
+          </div>
+        </div>
+
+        <div class="esp-card" data-animate="fade-up" data-delay="300">
+          <div class="esp-card-img" style="background: linear-gradient(135deg, #E8247C 0%, #F7A8C8 100%);">
+            <span class="esp-icon">🧁</span>
+          </div>
+          <div class="esp-card-body">
+            <h3>Cupcakes & Postres</h3>
+            <p>Pequeñas obras de arte para eventos y celebraciones. Simples o con fondant — variedad artesanal.</p>
+            <span class="esp-tag">30+ Sabores</span>
+          </div>
+        </div>
+
+        <div class="esp-card" data-animate="fade-up" data-delay="400">
+          <div class="esp-card-img" style="background: linear-gradient(135deg, #C9A84C 0%, #E8247C 100%);">
+            <span class="esp-icon">🎨</span>
+          </div>
+          <div class="esp-card-body">
+            <h3>Tortas Temáticas</h3>
+            <p>Stranger Things, Chanel, superhéroes, deportes — damos vida a cualquier tema con esculturas 3D en fondant.</p>
+            <span class="esp-tag">Creatividad Sin Límites</span>
+          </div>
+        </div>
+
+        <div class="esp-card" data-animate="fade-up" data-delay="500">
+          <div class="esp-card-img" style="background: linear-gradient(135deg, #6B3030 0%, #C9A84C 100%);">
+            <span class="esp-icon">☕</span>
+          </div>
+          <div class="esp-card-body">
+            <h3>Cafetería</h3>
+            <p>Café de especialidad, bebidas frías y calientes, cheesecake horneado y postres de temporada en Cuenca y Puyo.</p>
+            <span class="esp-tag">Experiencia Completa</span>
+          </div>
+        </div>
+
+        <div class="esp-card" data-animate="fade-up" data-delay="600">
+          <div class="esp-card-img" style="background: linear-gradient(135deg, #FDE8F2 0%, #E8247C 100%);">
+            <span class="esp-icon">🍬</span>
+          </div>
+          <div class="esp-card-body">
+            <h3>Bocaditos</h3>
+            <p>Bocaditos de dulce y sal para eventos. Ideales para complementar tu torta principal o reuniones especiales.</p>
+            <span class="esp-tag">Para Eventos</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SABORES BANNER ========== -->
+  <section class="sabores-banner">
+    <div class="container sabores-content" data-animate="fade-up">
+      <div class="sabores-text">
+        <span class="sabores-script">Más de</span>
+        <span class="sabores-num">30</span>
+        <span class="sabores-script">sabores a tu elección</span>
+      </div>
+      <div class="sabores-tags">
+        <span>Vainilla</span><span>Chocolate</span><span>Fresas con Crema</span>
+        <span>Red Velvet</span><span>Limón</span><span>Maracuyá</span>
+        <span>Tres Leches</span><span>Tiramisú</span><span>Moka</span>
+        <span>Coco</span><span>Dulce de Leche</span><span>Cheesecake</span>
+        <span class="tag-more">+20 más...</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALERÍA ========== -->
+  <section id="galeria" class="section galeria">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-tag">Nuestras Obras</div>
+        <h2 class="section-title">Galería de <em>Creaciones</em></h2>
+        <div class="gold-divider center"></div>
+        <p class="section-desc">Cada torta es una historia única. Aquí algunas de nuestras creaciones favoritas.</p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item" data-animate="fade-up" data-delay="0">
+          <img src="img/galeria/corona-elegante.png" alt="Torta quinceañera con corona dorada — Cake Art" />
+          <div class="gallery-overlay">
+            <span class="gallery-label">Quinceañera Elegante</span>
+            <span class="gallery-sub">Fondant con corona dorada</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-animate="fade-up" data-delay="100">
+          <img src="img/galeria/artdeco-60.png" alt="Torta Art Decó negro y dorado 60 años — Cake Art" />
+          <div class="gallery-overlay">
+            <span class="gallery-label">Art Décó — 60 Años</span>
+            <span class="gallery-sub">Diseño de autor en negro y dorado</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-animate="fade-up" data-delay="200">
+          <img src="img/galeria/alicia-tematica.png" alt="Torta temática Alicia en el País de las Maravillas — Cake Art" />
+          <div class="gallery-overlay">
+            <span class="gallery-label">Alicia en el País de las Maravillas</span>
+            <span class="gallery-sub">Torta temática personalizada</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-animate="fade-up" data-delay="100">
+          <img src="img/galeria/dragon-tematica.png" alt="Torta temática Cómo Entrenar tu Dragón — Cake Art" />
+          <div class="gallery-overlay">
+            <span class="gallery-label">Cómo Entrenar tu Dragón</span>
+            <span class="gallery-sub">Escultura 3D en fondant</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-animate="fade-up" data-delay="200">
+          <img src="img/galeria/angel-disney.png" alt="Torta temática Angel Disney personalizada Kiara — Cake Art" />
+          <div class="gallery-overlay">
+            <span class="gallery-label">Angel Disney — Kiara</span>
+            <span class="gallery-sub">Figura 3D personalizada en fondant</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-animate="fade-up" data-delay="300">
+          <img src="img/galeria/mini-chocolate.png" alt="Mini tortas con drip de chocolate — Cake Art" />
+          <div class="gallery-overlay">
+            <span class="gallery-label">Mini Tortas de Chocolate</span>
+            <span class="gallery-sub">Colección vitrina Cake Art</span>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-item-featured" data-animate="fade-up" data-delay="150">
+          <img src="img/galeria/boda-elegante.png" alt="Torta de boda multi-piso con flores naturales — Cake Art" />
+          <div class="gallery-overlay gallery-overlay-bottom">
+            <div class="gallery-featured-tag">Creación Destacada</div>
+            <span class="gallery-label">Torta de Boda Elegante</span>
+            <span class="gallery-sub">Diseño multi-piso con arreglos florales naturales — el día más importante merece lo mejor</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIOS (C7) ========== -->
+  <section id="testimonios" class="section testimonios">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-tag">Lo que dicen nuestros clientes</div>
+        <h2 class="section-title">Historias que nos <em>Llenan de Orgullo</em></h2>
+        <div class="gold-divider center"></div>
+      </div>
+
+      <div class="testimonios-grid">
+
+        <div class="testimonio-card" data-animate="fade-up" data-delay="0">
+          <div class="testimonio-stars">★★★★★</div>
+          <p class="testimonio-text">"Encargué la torta de mi boda con apenas una semana de anticipación y quedó exactamente como la imaginé. Los detalles en fondant eran increíbles y el sabor de tres leches fue lo que más elogios recibió de mis invitados."</p>
+          <div class="testimonio-autor">
+            <div class="testimonio-avatar">M</div>
+            <div>
+              <strong>María José Ramos</strong>
+              <span>Ambato · Torta de Boda</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonio-card testimonio-featured" data-animate="fade-up" data-delay="100">
+          <div class="testimonio-stars">★★★★★</div>
+          <p class="testimonio-text">"Pedí una torta temática de Stranger Things para los 15 de mi hija y superaron todas mis expectativas. La escultura de Vecna en fondant era impresionante. Vale cada centavo."</p>
+          <div class="testimonio-autor">
+            <div class="testimonio-avatar">C</div>
+            <div>
+              <strong>Carlos Andrade</strong>
+              <span>Cuenca · Torta Temática</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonio-card" data-animate="fade-up" data-delay="200">
+          <div class="testimonio-stars">★★★★★</div>
+          <p class="testimonio-text">"Llevamos 3 generaciones encargando tortas con Verónica. Mi mamá tuvo su torta de boda aquí, yo mi torta de 15, y ahora la quinceañera de mi hija. Eso dice todo."</p>
+          <div class="testimonio-autor">
+            <div class="testimonio-avatar">P</div>
+            <div>
+              <strong>Patricia Veloz</strong>
+              <span>Latacunga · Quinceañera</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COTIZACIÓN CTA ========== -->
+  <section id="cotizacion" class="section cotizacion-cta">
+    <div class="container" data-animate="fade-up">
+      <div class="cotizacion-inner">
+        <div class="cotizacion-text">
+          <div class="section-tag">Tu Torta Perfecta</div>
+          <h2 class="section-title">Cada torta tiene su <em>precio especial</em></h2>
+          <div class="gold-divider center"></div>
+          <p>Nuestras creaciones son 100% personalizadas — el precio depende del diseño, tamaño, sabor y nivel de detalle.</p>
+        </div>
+
+        <div class="cotizacion-opciones">
+          <!-- Opción A: WhatsApp (recomendada) -->
+          <div class="cotiz-opcion cotiz-recomendada">
+            <div class="cotiz-badge-rec">✦ Recomendado — Respuesta en minutos</div>
+            <div class="cotiz-opcion-header">
+              <span class="cotiz-icon">💬</span>
+              <div>
+                <strong>Cotiza por WhatsApp</strong>
+                <span>Habla directo con nosotros y recibe tu precio al instante</span>
+              </div>
+            </div>
+            <a href="https://wa.me/593998142108?text=Hola%20Cake%20Art!%20%F0%9F%8E%82%20Quisiera%20una%20cotizaci%C3%B3n%20para%20mi%20torta.%20El%20evento%20es%3A%20" target="_blank" rel="noopener" class="btn-whatsapp btn-cotizar">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Cotizar por WhatsApp
+            </a>
+          </div>
+
+          <div class="cotiz-separador">
+            <span>o si prefieres</span>
+          </div>
+
+          <!-- Opción B: Formulario -->
+          <div class="cotiz-opcion cotiz-formulario">
+            <div class="cotiz-opcion-header">
+              <span class="cotiz-icon">📋</span>
+              <div>
+                <strong>Llena el formulario</strong>
+                <span>Te contactamos en menos de 24 horas</span>
+              </div>
+            </div>
+            <a href="#contacto" class="btn-outline cotiz-form-link">Ver formulario de cotización</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEDES ========== -->
+  <section id="sedes" class="section sedes">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-tag">Encuéntranos</div>
+        <h2 class="section-title">Nuestras <em>4 Sedes</em></h2>
+        <div class="gold-divider center"></div>
+        <p class="section-desc">Presentes en 4 ciudades del Ecuador para estar siempre cerca de ti.</p>
+      </div>
+
+      <div class="sedes-grid">
+
+        <!-- Ambato — Sede Principal -->
+        <div class="sede-card sede-card-main" data-animate="fade-up">
+          <div class="sede-badge-top">Sede Principal</div>
+          <div class="sede-header">
+            <span class="sede-emoji">🏙️</span>
+            <div>
+              <h3 class="sede-city">Ambato</h3>
+              <p class="sede-type">Planta Principal · Pick Up · Vitrina</p>
+            </div>
+          </div>
+          <div class="sede-info">
+            <div class="sede-info-row">
+              <span class="sede-info-icon">📍</span>
+              <span>Mariano Eguez y Primera Imprenta, Tungurahua</span>
+            </div>
+            <a href="https://maps.google.com/?q=Mariano+Eguez+y+Primera+Imprenta,+Ambato,+Ecuador" target="_blank" rel="noopener" class="sede-maps-link">📍 Ver en Google Maps</a>
+            <div class="sede-info-row">
+              <span class="sede-info-icon">🕐</span>
+              <span>Lunes a Sábado: 9:00 am – 7:00 pm</span>
+            </div>
+            <div class="sede-info-row">
+              <span class="sede-info-icon">📱</span>
+              <span>+593 99 982 8339</span>
+            </div>
+            <div class="sede-info-row">
+              <span class="sede-info-icon">💳</span>
+              <span>Efectivo · Transferencia</span>
+            </div>
+          </div>
+          <div class="sede-productos">
+            <span>Tortas · Cupcakes · Postres · Bocaditos</span>
+          </div>
+          <!-- C4: WhatsApp individual por sede -->
+          <a href="https://wa.me/593999828339?text=Hola%20Cake%20Art%20Ambato!%20Quisiera%20informaci%C3%B3n%20sobre%20pedidos%20%F0%9F%8E%82" target="_blank" rel="noopener" class="sede-whatsapp-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Ambato
+          </a>
+        </div>
+
+        <!-- Cuenca -->
+        <div class="sede-card sede-card-cuenca" data-animate="fade-up" data-delay="150">
+          <div class="sede-header">
+            <span class="sede-emoji">☕</span>
+            <div>
+              <h3 class="sede-city">Cuenca</h3>
+              <p class="sede-type">Cafetería · Pedidos Personalizados</p>
+            </div>
+          </div>
+          <div class="sede-info">
+            <div class="sede-info-row">
+              <span class="sede-info-icon">📍</span>
+              <span>Av. 12 de Octubre y Don Bosco, Azuay</span>
+            </div>
+            <a href="https://maps.google.com/?q=Av.+12+de+Octubre+y+Don+Bosco,+Cuenca,+Ecuador" target="_blank" rel="noopener" class="sede-maps-link">📍 Ver en Google Maps</a>
+            <div class="sede-info-row">
+              <span class="sede-info-icon">🕐</span>
+              <span>Lunes a Domingo: 10:00 am – 8:00 pm</span>
+            </div>
+            <div class="sede-info-row">
+              <span class="sede-info-icon">📱</span>
+              <span>+593 96 302 2576</span>
+            </div>
+            <div class="sede-info-row">
+              <span class="sede-info-icon">💳</span>
+              <span>Tarjeta · Efectivo · Transferencia</span>
+            </div>
+          </div>
+          <div class="sede-exclusivo">
+            <span class="sede-excl-label">Exclusivo Cuenca</span>
+            <span>Cheesecake Horneado · Postres de temporada · Café de especialidad</span>
+          </div>
+          <a href="https://wa.me/593963022576?text=Hola%20Cake%20Art%20Cuenca!%20Quisiera%20informaci%C3%B3n%20sobre%20pedidos%20%F0%9F%8E%82" target="_blank" rel="noopener" class="sede-whatsapp-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Cuenca
+          </a>
+        </div>
+
+        <!-- Latacunga -->
+        <div class="sede-card sede-card-latacunga" data-animate="fade-up" data-delay="300">
+          <div class="sede-badge-top sede-badge-franquicia">Franquicia</div>
+          <div class="sede-header">
+            <span class="sede-emoji">🎂</span>
+            <div>
+              <h3 class="sede-city">Latacunga</h3>
+              <p class="sede-type">Franquicia · Pick Up · Vitrina</p>
+            </div>
+          </div>
+          <div class="sede-info">
+            <div class="sede-info-row">
+              <span class="sede-info-icon">📍</span>
+              <span>Quijano Ordóñez y Marqués de Maenza, Cotopaxi</span>
+            </div>
+            <a href="https://maps.google.com/?q=Quijano+Ordoñez+y+Marques+de+Maenza,+Latacunga,+Ecuador" target="_blank" rel="noopener" class="sede-maps-link">📍 Ver en Google Maps</a>
+            <div class="sede-info-row">
+              <span class="sede-info-icon">🕐</span>
+              <span>10:00 am – 6:00 pm</span>
+            </div>
+            <div class="sede-info-row">
+              <span class="sede-info-icon">📱</span>
+              <span>Consultar WhatsApp principal</span>
+            </div>
+            <div class="sede-info-row">
+              <span class="sede-info-icon">💳</span>
+              <span>Efectivo · Transferencia</span>
+            </div>
+          </div>
+          <div class="sede-productos">
+            <span>Tortas · Cupcakes · Postres · Bocaditos</span>
+          </div>
+          <a href="https://wa.me/593998142108?text=Hola%20Cake%20Art%20Latacunga!%20Quisiera%20informaci%C3%B3n%20sobre%20pedidos%20%F0%9F%8E%82" target="_blank" rel="noopener" class="sede-whatsapp-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Latacunga
+          </a>
+        </div>
+
+        <!-- Puyo -->
+        <div class="sede-card sede-card-puyo" data-animate="fade-up" data-delay="450">
+          <div class="sede-badge-top sede-badge-franquicia">Franquicia</div>
+          <div class="sede-header">
+            <span class="sede-emoji">🌿</span>
+            <div>
+              <h3 class="sede-city">Puyo</h3>
+              <p class="sede-type">Franquicia · Cafetería</p>
+            </div>
+          </div>
+          <div class="sede-info">
+            <div class="sede-info-row">
+              <span class="sede-info-icon">📍</span>
+              <span>Ceslao Marín y Padre Juan de Velasco, esquina, Pastaza</span>
+            </div>
+            <a href="https://maps.google.com/?q=Ceslao+Marin+y+Juan+de+Velasco,+Puyo,+Ecuador" target="_blank" rel="noopener" class="sede-maps-link">📍 Ver en Google Maps</a>
+            <div class="sede-info-row">
+              <span class="sede-info-icon">🕐</span>
+              <span>9:00 am – 6:00 pm</span>
+            </div>
+            <div class="sede-info-row">
+              <span class="sede-info-icon">📱</span>
+              <span>096 300 2809</span>
+            </div>
+            <div class="sede-info-row">
+              <span class="sede-info-icon">💳</span>
+              <span>Efectivo · Transferencia</span>
+            </div>
+          </div>
+          <div class="sede-productos">
+            <span>Bebidas frías y calientes · Tortas · Postres</span>
+          </div>
+          <a href="https://wa.me/593963002809?text=Hola%20Cake%20Art%20Puyo!%20Quisiera%20informaci%C3%B3n%20sobre%20pedidos%20%F0%9F%8E%82" target="_blank" rel="noopener" class="sede-whatsapp-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Puyo
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESO (CÓMO PEDIR) ========== -->
+  <section id="proceso" class="section proceso">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-tag">Simple y Fácil</div>
+        <h2 class="section-title">¿Cómo Hacer <em>Tu Pedido?</em></h2>
+        <div class="gold-divider center"></div>
+        <p class="section-desc">"Sólo ven y haremos de tu evento algo especial."</p>
+      </div>
+
+      <div class="proceso-steps">
+        <div class="proceso-step" data-animate="fade-up">
+          <div class="step-number">01</div>
+          <div class="step-icon">💬</div>
+          <h3>Contáctanos</h3>
+          <p>Escríbenos por WhatsApp al <strong>0998142108</strong>, visítanos en tienda o contáctanos por Instagram. Cuéntanos tu idea y la fecha.</p>
+        </div>
+
+        <div class="proceso-arrow">→</div>
+
+        <div class="proceso-step" data-animate="fade-up" data-delay="150">
+          <div class="step-number">02</div>
+          <div class="step-icon">🎨</div>
+          <h3>Diseñamos Juntos</h3>
+          <p>Elegimos el diseño, sabor y tamaño perfectos para tu evento. Más de 30 sabores y tipos de decoración a tu elección.</p>
+        </div>
+
+        <div class="proceso-arrow">→</div>
+
+        <div class="proceso-step" data-animate="fade-up" data-delay="300">
+          <div class="step-number">03</div>
+          <div class="step-icon">✅</div>
+          <h3>Confirmamos</h3>
+          <p>Reservamos tu fecha con un <strong>anticipo del 50%</strong>. Te enviamos confirmación con todos los detalles del pedido.</p>
+        </div>
+
+        <div class="proceso-arrow">→</div>
+
+        <div class="proceso-step" data-animate="fade-up" data-delay="450">
+          <div class="step-number">04</div>
+          <div class="step-icon">🎉</div>
+          <h3>¡Celebra!</h3>
+          <p>Recoge tu obra de arte con <strong>24h de anticipación mínima</strong>, o recíbela en tu evento. "Has de tu día el más especial."</p>
+        </div>
+      </div>
+
+      <div class="proceso-policies-note" data-animate="fade-up">
+        <h4>📋 Condiciones importantes</h4>
+        <ul>
+          <li>✦ Se requiere el <strong>50% de anticipo</strong> para confirmar tu pedido</li>
+          <li>✦ Pedidos con mínimo <strong>24 horas de anticipación</strong></li>
+          <li>✦ Cancelaciones con al menos <strong>1 día de anticipación</strong> antes de la entrega</li>
+          <li>✦ Te contactamos en menos de <strong>24 horas</strong> tras tu solicitud</li>
+        </ul>
+      </div>
+
+      <div class="proceso-cta" data-animate="fade-up">
+        <a href="https://wa.me/593998142108" target="_blank" rel="noopener" class="btn-whatsapp">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escribir por WhatsApp
+        </a>
+        <a href="#contacto" class="btn-outline">Ver Información de Contacto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section id="contacto" class="section contacto">
+    <div class="container contacto-grid">
+      <div class="contacto-info" data-animate="fade-right">
+        <div class="section-tag">Estamos Aquí</div>
+        <h2 class="section-title">¡Hagamos Tu <em>Evento Especial!</em></h2>
+        <div class="gold-divider"></div>
+        <p class="contacto-desc">
+          "Sólo ven y haremos de tu evento algo especial." Contáctanos y cuéntanos tu sueño — nosotros lo convertimos en realidad.
+        </p>
+
+        <div class="contacto-items">
+          <div class="contacto-item">
+            <div class="contacto-icon">📍</div>
+            <div>
+              <strong>Sede Principal — Ambato</strong>
+              <span>Mariano Eguez y Primera Imprenta, Tungurahua<br />Lunes a Sábado: 9:00 am – 7:00 pm</span>
+            </div>
+          </div>
+          <div class="contacto-item">
+            <div class="contacto-icon">📱</div>
+            <div>
+              <strong>WhatsApp Principal</strong>
+              <span>
+                <a href="https://wa.me/593998142108" target="_blank" rel="noopener" style="color:var(--rosa-fucsia);font-weight:600;">0998142108</a>
+                &nbsp;— Cotizaciones y pedidos<br />
+                Cuenca: <a href="https://wa.me/593963022576" target="_blank" rel="noopener" style="color:var(--rosa-fucsia);">+593 96 302 2576</a>
+                &nbsp;·&nbsp;
+                Puyo: <a href="https://wa.me/593963002809" target="_blank" rel="noopener" style="color:var(--rosa-fucsia);">096 300 2809</a>
+              </span>
+            </div>
+          </div>
+          <div class="contacto-item">
+            <div class="contacto-icon">✉️</div>
+            <div>
+              <strong>Correo Electrónico</strong>
+              <span>cakeart.negocio@gmail.com</span>
+            </div>
+          </div>
+          <div class="contacto-item">
+            <div class="contacto-icon">📲</div>
+            <div>
+              <strong>Redes Sociales</strong>
+              <span>Instagram · Facebook · TikTok: <strong>@cakeart_postresypasteles</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacto-social">
+          <a href="https://wa.me/593998142108" target="_blank" rel="noopener" class="social-btn whatsapp-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://www.instagram.com/cakeart_by_veronicamontalvo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="social-btn instagram-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          <a href="https://www.facebook.com/CAKEAMBATO?locale=es_LA" target="_blank" rel="noopener" class="social-btn facebook-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+
+      <div class="contacto-form-wrap" data-animate="fade-left">
+        <form class="contacto-form" id="contactForm" novalidate>
+          <h3>Solicitar Cotización</h3>
+          <div class="form-group">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp *</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" required />
+          </div>
+          <div class="form-group">
+            <label for="evento">Tipo de evento *</label>
+            <select id="evento" name="evento" required>
+              <option value="">Selecciona el tipo de evento</option>
+              <option>Cumpleaños</option>
+              <option>Boda</option>
+              <option>Quinceañera</option>
+              <option>Bautizo / Baby Shower</option>
+              <option>Aniversario</option>
+              <option>Graduación</option>
+              <option>Corporativo</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fecha">Fecha del evento *</label>
+            <input type="date" id="fecha" name="fecha" required />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Cuéntanos tu idea</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe el diseño que imaginas, sabor preferido, número de personas..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">
+            Enviar por WhatsApp
+          </button>
+          <p class="form-note">Te contactaremos en menos de 24 horas ✦</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <span class="success-icon">✓</span>
+          <h4>¡Mensaje enviado!</h4>
+          <p>Gracias por contactarnos. Te responderemos muy pronto para hacer de tu evento algo especial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="nav-logo footer-logo">
+            <span class="logo-script">Cake Art</span>
+            <span class="logo-sub">by Verónica Montalvo</span>
+          </a>
+          <p class="footer-tagline">"Disfrutando siempre de tus grandes momentos."</p>
+          <p class="footer-years">35+ Años de Tradición &amp; Arte</p>
+          <p class="footer-cities">Ambato · Cuenca · Puyo · Latacunga</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nuestra Historia</a></li>
+            <li><a href="#disponible-hoy">Disponible Hoy</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sedes">Nuestras Sedes</a></li>
+            <li><a href="#proceso">Cómo Pedir</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Especialidades</h4>
+          <ul>
+            <li><a href="#especialidades">Tortas de Cumpleaños</a></li>
+            <li><a href="#especialidades">Tortas de Boda</a></li>
+            <li><a href="#especialidades">Quinceañeras</a></li>
+            <li><a href="#especialidades">Cupcakes & Postres</a></li>
+            <li><a href="#especialidades">Tortas Temáticas</a></li>
+            <li><a href="#especialidades">Cafetería</a></li>
+            <li><a href="#especialidades">Bocaditos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4>Contáctanos</h4>
+          <div class="footer-social">
+            <a href="https://wa.me/593998142108" target="_blank" rel="noopener" class="footer-social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              0998142108
+            </a>
+            <a href="https://www.instagram.com/cakeart_by_veronicamontalvo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="footer-social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              @cakeart_postresypasteles
+            </a>
+            <a href="https://www.facebook.com/CAKEAMBATO?locale=es_LA" target="_blank" rel="noopener" class="footer-social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              cakeart_postresypasteles
+            </a>
+            <a href="https://www.tiktok.com/@cakeartpostresypasteles" target="_blank" rel="noopener" class="footer-social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.84 4.84 0 01-1.01-.07z"/></svg>
+              @cakeartpostresypasteles
+            </a>
+          </div>
+          <p class="footer-hours">
+            <strong>Ambato (Principal):</strong><br />
+            Lun – Sáb: 9:00 AM – 7:00 PM<br /><br />
+            <strong>Cuenca:</strong><br />
+            Lun – Dom: 10:00 AM – 8:00 PM
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Cake Art by Verónica Montalvo. Todos los derechos reservados.</p>
+        <p class="footer-made">Hecho con <span style="color:#E8247C">♥</span> y 35+ años de dedicación — Ambato · Cuenca · Puyo · Latacunga</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/593998142108" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contáctanos por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-tooltip">¡Haz tu pedido!</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
