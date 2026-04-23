@@ -234,8 +234,8 @@ input, select, textarea { font-family: var(--fuente-lato); }
   text-decoration: none;
 }
 .nav-logo-img {
-  height: 170px;
-  width: 170px;
+  height: 220px;
+  width: 220px;
   object-fit: contain;
   border-radius: 8px;
   display: block;
@@ -246,8 +246,8 @@ input, select, textarea { font-family: var(--fuente-lato); }
   opacity: 0.85;
 }
 .navbar.scrolled .nav-logo-img {
-  height: 120px;
-  width: 120px;
+  height: 150px;
+  width: 150px;
 }
 .logo-script {
   font-family: var(--fuente-script);
@@ -1508,8 +1508,8 @@ input, select, textarea { font-family: var(--fuente-lato); }
 
   /* Navbar */
   .hamburger { display: flex; }
-  .nav-logo-img { height: 120px; width: 120px; }
-  .navbar.scrolled .nav-logo-img { height: 96px; width: 96px; }
+  .nav-logo-img { height: 150px; width: 150px; }
+  .navbar.scrolled .nav-logo-img { height: 120px; width: 120px; }
 
   .nav-links {
     position: fixed;
