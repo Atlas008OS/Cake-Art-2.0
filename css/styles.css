@@ -448,7 +448,7 @@ input, select, textarea { font-family: var(--fuente-lato); }
 .hero-img-frame {
   position: relative;
   border-radius: var(--radio-grande);
-  overflow: visible;
+  overflow: hidden;
 }
 
 .hero-img-frame::before {
@@ -470,6 +470,13 @@ input, select, textarea { font-family: var(--fuente-lato); }
   box-shadow: var(--sombra-fuerte);
   background: linear-gradient(145deg, #ffe0ef 0%, #fde8f2 50%, #ffd6ec 100%);
   padding: 20px;
+}
+
+.hero-video {
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+  background: transparent;
 }
 
 .img-badge-float {
