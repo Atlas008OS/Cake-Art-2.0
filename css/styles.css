@@ -619,7 +619,6 @@ input, select, textarea { font-family: var(--fuente-lato); }
 .nosotros-img-main {
   border-radius: var(--radio-grande);
   overflow: hidden;
-  box-shadow: var(--sombra-fuerte);
 }
 .nosotros-img-main img {
   width: 100%;
