@@ -234,8 +234,8 @@ input, select, textarea { font-family: var(--fuente-lato); }
   text-decoration: none;
 }
 .nav-logo-img {
-  height: 100px;
-  width: 100px;
+  height: 140px;
+  width: 140px;
   object-fit: contain;
   border-radius: 8px;
   display: block;
@@ -243,11 +243,11 @@ input, select, textarea { font-family: var(--fuente-lato); }
 }
 .nav-logo-img:hover {
   transform: scale(1.04);
-  opacity: 0.88;
+  opacity: 0.85;
 }
 .navbar.scrolled .nav-logo-img {
-  height: 86px;
-  width: 86px;
+  height: 110px;
+  width: 110px;
 }
 .logo-script {
   font-family: var(--fuente-script);
@@ -1508,8 +1508,8 @@ input, select, textarea { font-family: var(--fuente-lato); }
 
   /* Navbar */
   .hamburger { display: flex; }
-  .nav-logo-img { height: 80px; width: 80px; }
-  .navbar.scrolled .nav-logo-img { height: 70px; width: 70px; }
+  .nav-logo-img { height: 100px; width: 100px; }
+  .navbar.scrolled .nav-logo-img { height: 86px; width: 86px; }
 
   .nav-links {
     position: fixed;
