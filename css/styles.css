@@ -1459,21 +1459,19 @@ input, select, textarea { font-family: var(--fuente-lato); }
   .img-badge-float { left: -10px; }
   .hero-img { height: 400px; padding: 16px; }
   .hero-img-frame {
-    position: relative;
-    height: 380px;
     border-radius: var(--radio-grande);
     overflow: hidden;
   }
   .hero-img-frame .hero-video {
-    position: absolute;
-    inset: 0;
+    display: block;
     width: 100%;
-    height: 100%;
+    height: 380px;
     object-fit: cover;
     object-position: center;
     padding: 0;
     border-radius: 0;
     box-shadow: none;
+    background: #fce4f0;
   }
 
   .nosotros-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -1536,8 +1534,7 @@ input, select, textarea { font-family: var(--fuente-lato); }
   /* Hero */
   .hero-container { padding-top: 0; padding-bottom: 60px; }
   .hero-img { height: 300px; padding: 12px; }
-  .hero-img-frame { height: 300px; }
-  .hero-img-frame .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; padding: 0; border-radius: 0; box-shadow: none; }
+  .hero-img-frame .hero-video { display: block; width: 100%; height: 300px; object-fit: cover; object-position: center; padding: 0; border-radius: 0; box-shadow: none; background: #fce4f0; }
   .nosotros-img-main img { height: 320px; }
 
   /* Stats */
