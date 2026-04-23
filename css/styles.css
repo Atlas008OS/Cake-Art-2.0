@@ -208,7 +208,7 @@ input, select, textarea { font-family: var(--fuente-lato); }
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 10px 0;
+  padding: 4px 0;
   transition: var(--transicion);
 }
 
@@ -216,7 +216,7 @@ input, select, textarea { font-family: var(--fuente-lato); }
   background: rgba(255, 249, 245, 0.97);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  padding: 6px 0;
+  padding: 4px 0;
   box-shadow: 0 2px 32px rgba(232, 36, 124, 0.1);
 }
 
@@ -234,20 +234,20 @@ input, select, textarea { font-family: var(--fuente-lato); }
   text-decoration: none;
 }
 .nav-logo-img {
-  height: 140px;
-  width: 140px;
+  height: 170px;
+  width: 170px;
   object-fit: contain;
   border-radius: 8px;
   display: block;
-  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition: transform 0.25s ease, opacity 0.25s ease, height 0.3s ease, width 0.3s ease;
 }
 .nav-logo-img:hover {
   transform: scale(1.04);
   opacity: 0.85;
 }
 .navbar.scrolled .nav-logo-img {
-  height: 110px;
-  width: 110px;
+  height: 120px;
+  width: 120px;
 }
 .logo-script {
   font-family: var(--fuente-script);
@@ -1508,8 +1508,8 @@ input, select, textarea { font-family: var(--fuente-lato); }
 
   /* Navbar */
   .hamburger { display: flex; }
-  .nav-logo-img { height: 100px; width: 100px; }
-  .navbar.scrolled .nav-logo-img { height: 86px; width: 86px; }
+  .nav-logo-img { height: 120px; width: 120px; }
+  .navbar.scrolled .nav-logo-img { height: 96px; width: 96px; }
 
   .nav-links {
     position: fixed;
