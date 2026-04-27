@@ -621,7 +621,7 @@ input, select, textarea { font-family: var(--fuente-lato); }
 
 .nosotros-img-stack {
   position: relative;
-  padding: 0 28px 28px 4px;
+  padding: 0 8px 28px 24px;
   border-radius: var(--radio-grande);
   background: radial-gradient(ellipse at 58% 38%, #fce8f0 0%, #fef5f9 55%, #fff 100%);
 }
