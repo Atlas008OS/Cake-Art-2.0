@@ -619,23 +619,34 @@ input, select, textarea { font-family: var(--fuente-lato); }
   align-items: center;
 }
 
+.nosotros-img-stack {
+  position: relative;
+  padding: 0 28px 28px 4px;
+  border-radius: var(--radio-grande);
+  background: radial-gradient(ellipse at 58% 38%, #fce8f0 0%, #fef5f9 55%, #fff 100%);
+}
+
+.nosotros-img-bg {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  right: -20px;
+  bottom: -20px;
+  background: var(--rosa-fucsia);
+  border-radius: var(--radio-grande);
+  z-index: 0;
+}
+
 .nosotros-img-main {
   position: relative;
-  border-radius: var(--radio-grande);
+  z-index: 1;
+  border-radius: 0 0 var(--radio-grande) var(--radio-grande);
   overflow: hidden;
 }
 .nosotros-img-main img {
   width: 100%;
   height: auto;
   display: block;
-}
-.nosotros-cover-text {
-  position: absolute;
-  top: 52%;
-  left: 10%;
-  width: 80px;
-  height: 32px;
-  background: #E8247C;
 }
 
 .nosotros-img-badge {
