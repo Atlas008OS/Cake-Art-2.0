@@ -619,31 +619,9 @@ input, select, textarea { font-family: var(--fuente-lato); }
   align-items: center;
 }
 
-.nosotros-img-stack {
-  position: relative;
-  padding: 0 28px 28px 4px;
-  border-radius: var(--radio-grande);
-  background: radial-gradient(ellipse at 58% 38%, #fce8f0 0%, #fef5f9 55%, #fff 100%);
-}
-
-.nosotros-img-bg {
-  position: absolute;
-  top: 210px;
-  left: 15%;
-  right: -20px;
-  bottom: -20px;
-  background: var(--rosa-fucsia);
-  border-radius: var(--radio-grande);
-  z-index: 0;
-}
-
 .nosotros-img-main {
-  position: relative;
-  z-index: 1;
-  border-radius: 0 0 var(--radio-grande) var(--radio-grande);
+  border-radius: var(--radio-grande);
   overflow: hidden;
-  background: transparent;
-  filter: drop-shadow(8px 16px 24px rgba(0,0,0,0.18));
 }
 .nosotros-img-main img {
   width: 100%;
@@ -1510,9 +1488,7 @@ input, select, textarea { font-family: var(--fuente-lato); }
   }
 
   .nosotros-grid { grid-template-columns: 1fr; gap: 48px; }
-  .nosotros-img-stack { max-width: 480px; margin: 0 auto; }
-  .nosotros-img-bg { top: 170px; left: 15%; right: -14px; bottom: -14px; }
-  .nosotros-img-quote { top: 80px; left: -16px; }
+  .nosotros-img-main { max-width: 500px; margin: 0 auto; }
   .nosotros-img-main img { height: 420px; }
 
   .especialidades-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1575,11 +1551,7 @@ input, select, textarea { font-family: var(--fuente-lato); }
   .hero-img-frame { border-radius: 0; overflow: hidden; }
   .hero-img-frame .hero-video { display: block; width: 100%; height: 65vw; min-height: 220px; max-height: 340px; object-fit: cover; object-position: center top; border-radius: 0; background: #fce4f0; }
   .nosotros-img-main img { height: 320px; }
-  .nosotros-img-stack { padding: 0 20px 20px 4px; }
-  .nosotros-img-bg { top: 130px; left: 15%; right: -10px; bottom: -10px; }
-  .nosotros-img-quote { font-size: 0.85rem; padding: 10px 13px; max-width: 170px; top: 60px; left: -12px; }
-  .nosotros-img-badge { padding: 14px 18px; bottom: -8px; right: -8px; }
-  .badge-num { font-size: 2rem; }
+  .nosotros-img-main img { height: 320px; }
 
   /* Stats */
   .stats-grid { flex-direction: column; gap: 0; }
