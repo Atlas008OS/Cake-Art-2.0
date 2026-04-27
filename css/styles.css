@@ -636,22 +636,6 @@ input, select, textarea { font-family: var(--fuente-lato); }
   display: block;
 }
 
-.nosotros-img-quote {
-  position: absolute;
-  top: 80px;
-  left: -20px;
-  z-index: 2;
-  background: #fff;
-  border-radius: var(--radio);
-  padding: 16px 20px;
-  font-family: var(--fuente-script);
-  font-size: 1rem;
-  color: var(--rosa-fucsia);
-  line-height: 1.5;
-  box-shadow: var(--sombra-media);
-  max-width: 220px;
-  border-left: 4px solid var(--rosa-fucsia);
-}
 
 .nosotros-img-badge {
   position: absolute;
