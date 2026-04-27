@@ -621,15 +621,17 @@ input, select, textarea { font-family: var(--fuente-lato); }
 
 .nosotros-img-stack {
   position: relative;
-  padding: 0 24px 24px 8px;
+  padding: 0 28px 28px 4px;
+  border-radius: var(--radio-grande);
+  background: radial-gradient(ellipse at 58% 38%, #fce8f0 0%, #fef5f9 55%, #fff 100%);
 }
 
 .nosotros-img-bg {
   position: absolute;
-  top: 182px;
-  left: 17%;
-  right: -16px;
-  bottom: -16px;
+  top: 158px;
+  left: 15%;
+  right: -20px;
+  bottom: -20px;
   background: var(--rosa-fucsia);
   border-radius: var(--radio-grande);
   z-index: 0;
@@ -640,6 +642,7 @@ input, select, textarea { font-family: var(--fuente-lato); }
   z-index: 1;
   border-radius: 0 0 var(--radio-grande) var(--radio-grande);
   overflow: hidden;
+  background: transparent;
 }
 .nosotros-img-main img {
   width: 100%;
@@ -680,8 +683,8 @@ input, select, textarea { font-family: var(--fuente-lato); }
 
 .nosotros-img-quote {
   position: absolute;
-  top: 62px;
-  left: -8px;
+  top: 100px;
+  left: -4px;
   z-index: 2;
   background: #fff;
   border-radius: var(--radio);
@@ -1507,8 +1510,8 @@ input, select, textarea { font-family: var(--fuente-lato); }
 
   .nosotros-grid { grid-template-columns: 1fr; gap: 48px; }
   .nosotros-img-stack { max-width: 480px; margin: 0 auto; }
-  .nosotros-img-bg { top: 147px; left: 17%; right: -12px; bottom: -12px; }
-  .nosotros-img-quote { top: 50px; }
+  .nosotros-img-bg { top: 128px; left: 15%; right: -14px; bottom: -14px; }
+  .nosotros-img-quote { top: 80px; left: 0; }
   .nosotros-img-main img { height: 420px; }
 
   .especialidades-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1571,9 +1574,9 @@ input, select, textarea { font-family: var(--fuente-lato); }
   .hero-img-frame { border-radius: 0; overflow: hidden; }
   .hero-img-frame .hero-video { display: block; width: 100%; height: 65vw; min-height: 220px; max-height: 340px; object-fit: cover; object-position: center top; border-radius: 0; background: #fce4f0; }
   .nosotros-img-main img { height: 320px; }
-  .nosotros-img-stack { padding: 0 20px 20px 12px; }
-  .nosotros-img-bg { top: 112px; left: 17%; right: -8px; bottom: -8px; }
-  .nosotros-img-quote { font-size: 0.85rem; padding: 10px 13px; max-width: 175px; top: 38px; left: 0; }
+  .nosotros-img-stack { padding: 0 20px 20px 4px; }
+  .nosotros-img-bg { top: 97px; left: 15%; right: -10px; bottom: -10px; }
+  .nosotros-img-quote { font-size: 0.85rem; padding: 10px 13px; max-width: 170px; top: 60px; left: 0; }
   .nosotros-img-badge { padding: 14px 18px; bottom: -8px; right: -8px; }
   .badge-num { font-size: 2rem; }
 
