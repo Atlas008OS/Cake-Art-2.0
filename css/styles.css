@@ -629,6 +629,7 @@ input, select, textarea { font-family: var(--fuente-lato); }
 .nosotros-img-main {
   border-radius: var(--radio-grande);
   overflow: hidden;
+  background: radial-gradient(ellipse at 60% 40%, #fce8f0 0%, #fef5f9 60%, #fff 100%);
 }
 .nosotros-img-main img {
   width: 100%;
