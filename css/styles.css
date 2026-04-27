@@ -628,7 +628,7 @@ input, select, textarea { font-family: var(--fuente-lato); }
 
 .nosotros-img-bg {
   position: absolute;
-  top: 158px;
+  top: 210px;
   left: 15%;
   right: -20px;
   bottom: -20px;
@@ -643,6 +643,7 @@ input, select, textarea { font-family: var(--fuente-lato); }
   border-radius: 0 0 var(--radio-grande) var(--radio-grande);
   overflow: hidden;
   background: transparent;
+  filter: drop-shadow(8px 16px 24px rgba(0,0,0,0.18));
 }
 .nosotros-img-main img {
   width: 100%;
@@ -684,7 +685,7 @@ input, select, textarea { font-family: var(--fuente-lato); }
 .nosotros-img-quote {
   position: absolute;
   top: 100px;
-  left: -4px;
+  left: -28px;
   z-index: 2;
   background: #fff;
   border-radius: var(--radio);
@@ -1510,8 +1511,8 @@ input, select, textarea { font-family: var(--fuente-lato); }
 
   .nosotros-grid { grid-template-columns: 1fr; gap: 48px; }
   .nosotros-img-stack { max-width: 480px; margin: 0 auto; }
-  .nosotros-img-bg { top: 128px; left: 15%; right: -14px; bottom: -14px; }
-  .nosotros-img-quote { top: 80px; left: 0; }
+  .nosotros-img-bg { top: 170px; left: 15%; right: -14px; bottom: -14px; }
+  .nosotros-img-quote { top: 80px; left: -16px; }
   .nosotros-img-main img { height: 420px; }
 
   .especialidades-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1575,8 +1576,8 @@ input, select, textarea { font-family: var(--fuente-lato); }
   .hero-img-frame .hero-video { display: block; width: 100%; height: 65vw; min-height: 220px; max-height: 340px; object-fit: cover; object-position: center top; border-radius: 0; background: #fce4f0; }
   .nosotros-img-main img { height: 320px; }
   .nosotros-img-stack { padding: 0 20px 20px 4px; }
-  .nosotros-img-bg { top: 97px; left: 15%; right: -10px; bottom: -10px; }
-  .nosotros-img-quote { font-size: 0.85rem; padding: 10px 13px; max-width: 170px; top: 60px; left: 0; }
+  .nosotros-img-bg { top: 130px; left: 15%; right: -10px; bottom: -10px; }
+  .nosotros-img-quote { font-size: 0.85rem; padding: 10px 13px; max-width: 170px; top: 60px; left: -12px; }
   .nosotros-img-badge { padding: 14px 18px; bottom: -8px; right: -8px; }
   .badge-num { font-size: 2rem; }
 
