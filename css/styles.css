@@ -626,6 +626,23 @@ input, select, textarea { font-family: var(--fuente-lato); }
   border-radius: var(--radio-grande);
 }
 
+.nosotros-img-quote {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 2;
+  background: #fff;
+  border-radius: var(--radio);
+  padding: 10px 12px;
+  font-family: var(--fuente-script);
+  font-size: 0.78rem;
+  color: var(--rosa-fucsia);
+  line-height: 1.4;
+  box-shadow: var(--sombra-media);
+  max-width: 160px;
+  border-left: 3px solid var(--rosa-fucsia);
+}
+
 .nosotros-img-main {
   border-radius: var(--radio-grande);
   overflow: hidden;
@@ -636,7 +653,6 @@ input, select, textarea { font-family: var(--fuente-lato); }
   height: auto;
   display: block;
 }
-
 
 .nosotros-img-badge {
   position: absolute;
